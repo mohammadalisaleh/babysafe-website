@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#top" class="brand">
-      <img src="assets/logo.jpg" alt="BabySafe+" class="brand-logo">
+      <img src="assets/logo.png" alt="BabySafe+" class="brand-logo">
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
@@ -33,7 +33,7 @@
       <a href="#story">Our story</a>
       <a href="#stockists">Stockists</a>
       <a href="#contact">Contact</a>
-      <a href="https://wa.me/255769261656" class="btn btn-small">Order on WhatsApp</a>
+      <a href="https://wa.me/255769261656" class="btn btn-small btn-gold">Order on WhatsApp</a>
     </nav>
   </div>
 </header>
@@ -41,21 +41,23 @@
 <main id="main">
 
   <section class="hero" id="top">
+    <span class="hero-plus" aria-hidden="true">+</span>
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <h1>Foaming wash and body butter, made gently for baby skin.</h1>
-        <p class="lede">BabySafe+ hand-makes small batches of natural foaming shampoo &amp; body wash and face &amp; body butter in Arusha, Tanzania — now reaching families in Dar es Salaam and Nairobi too.</p>
+        <p class="hero-kicker">Handmade in Arusha, Tanzania</p>
+        <h1>Gentle by nature, made for baby skin.</h1>
+        <p class="lede">BabySafe+ hand-makes small batches of natural foaming shampoo &amp; body wash and face &amp; body butter — now reaching families in Dar es Salaam and Nairobi too.</p>
         <div class="hero-actions">
-          <a href="https://wa.me/255769261656" class="btn">Order on WhatsApp</a>
-          <a href="#products" class="text-link">See the products</a>
+          <a href="https://wa.me/255769261656" class="btn btn-gold">Order on WhatsApp</a>
+          <a href="#products" class="text-link-light">See the products</a>
         </div>
       </div>
       <div class="hero-media">
         <div class="hero-photos">
-          <div class="photo-frame">
+          <div class="photo-card">
             <img src="assets/wash-1.jpg" alt="BabySafe+ Foaming Shampoo &amp; Body Wash bottle">
           </div>
-          <div class="photo-frame">
+          <div class="photo-card">
             <img src="assets/butter-1.jpg" alt="BabySafe+ Face &amp; Body Butter jar">
           </div>
         </div>
@@ -63,15 +65,31 @@
     </div>
   </section>
 
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Handmade in Arusha</span>
+      <span>Fragrance free</span>
+      <span>Non-toxic</span>
+      <span>Eco friendly</span>
+      <span>Now in Dar es Salaam &amp; Nairobi</span>
+      <span>Handmade in Arusha</span>
+      <span>Fragrance free</span>
+      <span>Non-toxic</span>
+      <span>Eco friendly</span>
+      <span>Now in Dar es Salaam &amp; Nairobi</span>
+    </div>
+  </div>
+
   <section class="products" id="products">
     <div class="wrap">
-      <h2>What she makes</h2>
+      <div class="section-head">
+        <h2>What she makes</h2>
+        <p>Two products, made in small batches by hand — with a short, honest ingredient list.</p>
+      </div>
 
       <div class="product-row">
-        <div class="product-media">
-          <div class="photo-frame">
-            <img src="assets/wash-1.jpg" alt="BabySafe+ Foaming Shampoo &amp; Body Wash bottle">
-          </div>
+        <div class="product-stage teal">
+          <img src="assets/wash-1.jpg" alt="BabySafe+ Foaming Shampoo &amp; Body Wash bottle">
         </div>
         <div class="product-copy">
           <h3>Baby Foaming Shampoo &amp; Body Wash</h3>
@@ -87,10 +105,8 @@
       </div>
 
       <div class="product-row reverse">
-        <div class="product-media">
-          <div class="photo-frame">
-            <img src="assets/butter-1.jpg" alt="BabySafe+ Face &amp; Body Butter jar">
-          </div>
+        <div class="product-stage gold">
+          <img src="assets/butter-1.jpg" alt="BabySafe+ Face &amp; Body Butter jar">
         </div>
         <div class="product-copy">
           <h3>Baby Face &amp; Body Butter</h3>
@@ -104,26 +120,30 @@
 
   <section class="story" id="story">
     <div class="wrap story-inner">
-      <div class="story-media">
-        <div class="photo-placeholder">
-          <span>[ Founder photo ]</span>
-        </div>
+      <div class="story-photo">
+        <span>[ Founder photo ]</span>
       </div>
       <div class="story-copy">
         <h2>Why BabySafe+</h2>
-        <p class="note">[Add a few lines here about why BabySafe+ started, what changed after having a baby of her own, and what makes these products different. Replace this placeholder with the real story.]</p>
+        <p class="pull">"Hey, mom. If you're anything like me, you read every single ingredient before using anything on your baby."</p>
+        <p>When I was pregnant, I struggled to find baby products in East Africa that I truly trusted. And I kept thinking, why is this so hard?</p>
+        <p>As a chemical engineer, I understand what goes into these products, and what should be left out. I've spent years working with non-toxic formulas, from skincare to household products. But when it came to my own baby, nothing felt good enough.</p>
+        <p>So I decided to create my own. That's how BabySafe+ was born, right here in East Africa. Non-toxic, fragrance-free, eco-friendly, made for the most delicate skin.</p>
+        <p>Created, loved, and trusted by a mom just like you. Welcome to BabySafe+.</p>
       </div>
     </div>
   </section>
 
   <section class="stockists" id="stockists">
     <div class="wrap">
-      <h2>Where to find us</h2>
-      <p class="lede">Made by hand in Arusha, and now stocked further afield.</p>
+      <div class="section-head">
+        <h2>Where to find us</h2>
+        <p>Made by hand in Arusha, and now stocked further afield.</p>
+      </div>
       <div class="city-list">
         <div class="city">
           <h3>Arusha</h3>
-          <p>Tanzania — home base</p>
+          <p>Tanzania</p>
         </div>
         <div class="city">
           <h3>Dar es Salaam</h3>
@@ -145,11 +165,11 @@
         <p>Ask about pricing, place an order, or find out where to buy nearby.</p>
       </div>
       <div class="contact-details">
-        <a href="https://wa.me/255769261656" class="btn btn-light">Message on WhatsApp</a>
+        <a href="https://wa.me/255769261656" class="btn btn-ink">Message on WhatsApp</a>
         <p>Arusha, Tanzania</p>
-        <p><a href="mailto:hello@babysafeafrica.com" class="link-light">hello@babysafeafrica.com</a></p>
+        <p><a href="mailto:hello@babysafeafrica.com" class="link-dark">hello@babysafeafrica.com</a></p>
         <p>+255 769 261 656</p>
-        <p class="note-light">M-Pesa accepted (Lipa Number)</p>
+        <p class="note-dark">M-Pesa accepted (Lipa Number)</p>
       </div>
     </div>
   </section>
@@ -159,7 +179,7 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <img src="assets/logo.jpg" alt="BabySafe+" class="footer-logo">
+      <img src="assets/logo.png" alt="BabySafe+" class="footer-logo">
     </div>
     <nav class="footer-nav">
       <a href="#products">Products</a>
