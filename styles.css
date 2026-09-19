@@ -1,5 +1,5 @@
 /* ============================================
-   BabySafe+ — design tokens
+   BabySafe+ design tokens
    Real brand colors, sampled from the logo and packaging:
    teal #207A85, gold #F5C232. Used as bold color fields,
    not sprinkled accents. Borders over shadows. Tight tracking
@@ -152,8 +152,8 @@ a:hover { color: var(--teal); }
   padding-bottom: 16px;
 }
 
-.brand-logo { height: 38px; width: auto; }
-.footer-logo { height: 30px; width: auto; }
+.brand-logo { height: 44px; width: auto; }
+.footer-logo { height: 34px; width: auto; }
 
 .site-nav {
   display: none;
@@ -481,6 +481,9 @@ a:hover { color: var(--teal); }
 @media (min-width: 760px) {
   .site-nav { display: flex; }
   .nav-toggle { display: none; }
+
+  .brand-logo { height: 58px; }
+  .footer-logo { height: 44px; }
 
   .hero-inner { grid-template-columns: 1.15fr 0.85fr; align-items: center; }
   .hero-photos { align-self: center; }
