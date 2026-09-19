@@ -397,15 +397,51 @@ a:hover { color: var(--teal); }
 }
 
 .city {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: baseline;
-  gap: 16px;
   padding: 22px 0;
   border-bottom: 1px solid var(--line);
 }
-.city h3 { margin: 0; font-size: 1.3rem; }
-.city p { margin: 0; font-size: 0.98rem; color: var(--ink-faint); }
+
+.city-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.city-row h3 { margin: 0; font-size: 1.3rem; }
+.city-row p { margin: 0; font-size: 0.98rem; color: var(--ink-faint); }
+
+.stockist-drawer { margin-top: 14px; }
+
+.stockist-drawer summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--teal-deep);
+}
+.stockist-drawer summary:hover { color: var(--teal); }
+
+.drawer-note {
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  margin: 14px 0 10px;
+  max-width: 44ch;
+}
+
+.stockist-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stockist-list a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.stockist-list li:last-child a { border-bottom: none; }
+.stockist-list a span:first-child { font-weight: 600; font-size: 0.95rem; color: var(--ink); }
+.stockist-list a span:last-child { font-size: 0.85rem; color: var(--ink-faint); }
+.stockist-list a:hover span:first-child { color: var(--teal); }
 
 /* ---------- contact (full-bleed gold) ---------- */
 
@@ -479,6 +515,13 @@ a:hover { color: var(--teal); }
   .product-row.reverse .product-copy { order: 1; }
 
   .story-inner { align-items: center; }
+
+  .city-row {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
 
   .contact-inner { grid-template-columns: 1.2fr 0.8fr; }
   .contact-details { align-items: flex-end; text-align: right; }
